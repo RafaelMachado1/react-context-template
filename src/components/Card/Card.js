@@ -28,10 +28,10 @@ function Card(props) {
       console.log(error);
     }
   };
-
+  
   return (
     <Container>
-      <img src={pokemon.sprites?.front_default} alt={pokemon.name} />
+      <img src={pokemon.sprites?.versions['generation-v']['black-white'].animated.front_default} alt={pokemon.name} />
       <div>
         {location.pathname === "/" ? (
           <button onClick={() => addToPokedex(pokemon)}>
